@@ -12,7 +12,7 @@ let waterIsOn = true
 //Ride 1 works when:
     // green wire is connected
 
-    if (greenWireConnected = true){
+    if (greenWireConnected){
         ride1PowerOn = true;
     }
 
@@ -20,7 +20,7 @@ let waterIsOn = true
 //Ride 2 works when 
     //green and yellow wires are connected
 
-    if (greenWireConnected = true , yellowWireConnected = true){
+    if (greenWireConnected && yellowWireConnected){
         ride2PowerOn = true;
     }
 
@@ -31,15 +31,15 @@ let waterIsOn = true
 
     // let yellowWireConnected = false
 
-    if (greenWireConnected = true, redWireConnected = true, waterIsOn = true, yellowWireConnected=true){
+    if (greenWireConnected && redWireConnected && waterIsOn && yellowWireConnected){
         ride3PowerOn = true;
     }
 
 //Ride 4 has power when:
-    //ride wire is connected
+    //red wire is connected
 
-    if (redWireConnected = true){
-        ride4PowerOn = true
+    if (redWireConnected){
+        ride4PowerOn = true;
     }
 //Ride 4 is a slot machine
     //if a 1 is rolled it should return "star"
@@ -50,29 +50,30 @@ let waterIsOn = true
     //if a 6 is rolled it should return "tiger"
     //if a 7 is rolled it should return "seven"
 
-// function ride4SlotMachine(rolledNumber){    
 
-//   switch (rolledNumber){
-//     case 1:
-//       return "star"
-//       break;
-//     case 2:
-//         return "car"
-//         break;
-//     case 3:
-//             return "pot of gold"
-//             break;
-//     case 4:
-//       return "clover"
-//       break;
-//     case 5:
-//       return "bowling ball"
-//       break;
-//     case 6:
-//       return "tiger"
-//       break;
-//     case 7:
-//       return "seven"
-//       break;
-//     }
-// }
+function ride4SlotMachine(rolledNumber){    
+
+  switch (rolledNumber){
+    case 1:
+      return "star"
+      break;
+    case 2:
+        return "car"
+        break;
+    case 3:
+            return "pot of gold"
+            break;
+    case 4:
+      return "clover"
+      break;
+    case 5:
+      return "bowling ball"
+      break;
+    case 6:
+      return "tiger"
+      break;
+    case 7:
+      return "seven"
+      break;
+    }
+}
